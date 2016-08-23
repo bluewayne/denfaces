@@ -1,0 +1,115 @@
+{
+  "routes": [
+    {
+      "childRoutes": [
+        {
+          "path": "/",
+          "indexRoute": {},
+          "childRoutes": [
+            {
+              "path": "/add"
+            },
+            {
+              "path": "/characters/:id"
+            },
+            {
+              "path": "/stats"
+            },
+            {
+              "path": "/shame"
+            },
+            {
+              "path": ":category",
+              "childRoutes": [
+                {
+                  "path": ":race",
+                  "childRoutes": [
+                    {
+                      "path": ":bloodline"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "indexRoute": {},
+      "childRoutes": [
+        {
+          "path": "/add"
+        },
+        {
+          "path": "/characters/:id"
+        },
+        {
+          "path": "/stats"
+        },
+        {
+          "path": "/shame"
+        },
+        {
+          "path": ":category",
+          "childRoutes": [
+            {
+              "path": ":race",
+              "childRoutes": [
+                {
+                  "path": ":bloodline"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": ":category",
+      "childRoutes": [
+        {
+          "path": ":race",
+          "childRoutes": [
+            {
+              "path": ":bloodline"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "params": {
+    "category": "favicon.ico"
+  },
+  "location": {
+    "pathname": "/favicon.ico",
+    "search": "",
+    "hash": "",
+    "state": null,
+    "action": "POP",
+    "key": "d3kj1z",
+    "query": {},
+    "$searchBase": {
+      "search": "",
+      "searchBase": ""
+    }
+  },
+  "components": [
+    null,
+    null,
+    null
+  ],
+  "history": {},
+  "router": {
+    "__v2_compatible__": true
+  },
+  "matchContext": {
+    "history": {},
+    "transitionManager": {},
+    "router": {
+      "__v2_compatible__": true
+    }
+  }
+}
